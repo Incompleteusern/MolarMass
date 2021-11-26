@@ -1,4 +1,4 @@
-package me.NotAURL.Nodes;
+package me.Incompleteusern.MolarMass.Nodes;
 
 import java.util.Deque;
 

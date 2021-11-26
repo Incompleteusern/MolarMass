@@ -1,8 +1,8 @@
-package me.NotAURL;
+package me.Incompleteusern.MolarMass;
 
-import me.NotAURL.Nodes.NodeFormula;
-import me.NotAURL.Nodes.Terminals;
-import me.NotAURL.Nodes.Token;
+import me.Incompleteusern.MolarMass.Nodes.Terminals;
+import me.Incompleteusern.MolarMass.Nodes.NodeFormula;
+import me.Incompleteusern.MolarMass.Nodes.Token;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
@@ -11,7 +11,6 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        // write your code here
         //KAl(Al2Si3O10)
         String input = "C10H4";
         Deque<Token> tokens = generateTokens(input);
@@ -44,7 +43,7 @@ public class Main {
                     continue;
                 case ')':
                     tokens.add(new Token(")", Token.TokenType.RightParentheses));
-                    System.out.println("Matched )");
+                    if (debug) System.out.println("Matched )");
                     i++;
                     continue;
                 default:
